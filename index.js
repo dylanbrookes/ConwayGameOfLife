@@ -1,3 +1,9 @@
+// global vars
+let grid;
+let cols;
+let rows;
+let resolution = 10;
+
 function generateGrid(cols, rows) {
     let arr = new Array(cols);
     for (let i=0; i < arr.length; i++) {
@@ -5,13 +11,6 @@ function generateGrid(cols, rows) {
     }
     return arr;
 }
-
-
-let grid;
-let cols;
-let rows;
-let resolution = 10;
-
 
 function draw() {
     let gridCanvas = document.getElementById("gridCanvas");
@@ -66,7 +65,6 @@ class Cell {
 
         return sum;
     }
-
 }
 
 
@@ -96,7 +94,6 @@ function newLife() {
     clearCanvas();
     draw();
 }
-
 
 
 function setup() {
