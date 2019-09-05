@@ -95,7 +95,6 @@ function newLife() {
     draw();
 }
 
-
 function setup() {
     cols = 800 / resolution;
     rows = 800 / resolution;
